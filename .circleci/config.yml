@@ -9,6 +9,7 @@ jobs:
       - checkout
       - run: python -m venv .venv
       - run: . .venv/bin/activate && make deps
+      - run: . .venv/bin/activate && make lint
       - run: . .venv/bin/activate && make test
 
 workflows:
